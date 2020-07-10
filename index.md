@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Welcome to My Stupid Website
 
-You can use the [editor on GitHub](https://github.com/TreeShadeZoku/TreeShadeZoku.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+事实上我完全没想好要写什么……
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+这个界面现在也是非常的愚蠢……
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+但是好歹算是有了……
 
 ```markdown
-Syntax highlighted code block
+this is a code block
 
-# Header 1
-## Header 2
-### Header 3
+maybe can be used to write something
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Blah Blah Blah
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TreeShadeZoku/TreeShadeZoku.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+总之暂时就是这样
