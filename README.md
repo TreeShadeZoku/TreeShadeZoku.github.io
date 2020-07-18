@@ -27,7 +27,3 @@ Loosely based on the [Onelight Atom Theme](https://github.com/atom/one-light-ui)
 ## Demo
 
 - http://hugosereno.eu
-
-## Preview
-
-![Theme preview](/assets/screenshot.png)
