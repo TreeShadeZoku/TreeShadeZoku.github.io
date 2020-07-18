@@ -1,0 +1,19 @@
+---
+layout: post
+title: Try
+date: 2020-07-18
+categories: Mathematics
+---
+
+> What is the use of this.
+
+Just trying something **boom**!
+
+```scala
+var correct = 0
+
+print("Hello World!")
+
+```
+
+There is the end.
