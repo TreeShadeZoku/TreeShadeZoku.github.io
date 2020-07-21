@@ -1,0 +1,21 @@
+---
+layout: post
+title: 中文2
+date: 2020-07-21
+categories: 另一类
+---
+
+> What is the use of this.
+
+Just trying something **boom**!
+
+```scala
+var correct = 0
+
+print("Hello World!")
+
+```
+
+随便写点字。
+
+There is the end.
