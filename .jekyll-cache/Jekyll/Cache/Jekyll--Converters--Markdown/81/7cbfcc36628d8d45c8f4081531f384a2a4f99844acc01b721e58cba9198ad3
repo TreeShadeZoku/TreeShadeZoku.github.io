@@ -1,10 +1,10 @@
-I"R<blockquote>
+I"G<blockquote>
   <p>Write in front: <br /> 写一些东西督促自己把 Linux 里没学会的东西复习一遍。《红帽系统管理》的内容挺丰富的，希望能坚持到写完——或者写得差不多。</p>
 </blockquote>
 
 <h3 id="目录">目录</h3>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux基础命令
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux基础命令
  |
  |--目录
  |--在 Windows 环境下安装 Linux 虚拟机
@@ -29,7 +29,7 @@
 
 <p>将要使用的软件是 <strong>Vmware Workstation Pro</strong> ，可以去<a href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">这个网址</a>下载：</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html
 </code></pre></div></div>
 
 <p>选择 <strong>for Windows</strong> 版本就行，然后下载好了安装，中途应该没有什么问题，除了最后会遇到一个激活密钥。作为经济能力有限的学生，暂时买不起正版的话，出于学习和科研考虑，在网上随便搜一个密钥来用就行了。</p>
@@ -44,74 +44,70 @@
 
 <p>输入的命令通常由三部分组成：命令、选项、参数。</p>
 
-<h2 id="date-命令"><strong>date</strong> 命令</h2>
+<h3 id="date-命令"><strong>date</strong> 命令</h3>
 
 <p><strong>date</strong> 命令用于显示当前日期和时间。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ date
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ date
 </code></pre></div></div>
 <p>这会以默认格式输出日期和时间。</p>
 
 <p>使用加号( + )开头的参数可以指定 date 命令输出的格式。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ date +%R
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ date +%R
 $ date +%r
-
 $ date +%x
-
 </code></pre></div></div>
 
 <blockquote>
   <p>Tips: <br /> 不知道该如何使用命令的选项和参数时，可以使用 <strong>–help</strong> 选项查询。</p>
 </blockquote>
 
-<h2 id="file-命令"><strong>file</strong> 命令</h2>
+<h3 id="file-命令"><strong>file</strong> 命令</h3>
 
 <p><strong>file</strong> 命令用于扫描文件内容的开头并输出文件类型。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ file <span class="nt">&lt;filename&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ file &lt;filename&gt;
 </code></pre></div></div>
 
 <p><strong>head</strong> 命令和 <strong>tail</strong> 命令用于显示文件的开头和结尾部分，默认情况下显示10行。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ head <span class="nt">&lt;filename&gt;</span>
-$ tail <span class="nt">&lt;filename&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ head [filename]
+$ tail [filename]
 </code></pre></div></div>
 
 <p>[-n] 选项可以指定输出不同的行数。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ head -n <span class="nt">&lt;number&gt;</span> <span class="nt">&lt;filename&gt;</span>
-$ tail -n <span class="nt">&lt;number&gt;</span> <span class="nt">&lt;filename&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ head -n &lt;number&gt; &lt;filename&gt;
+$ tail -n &lt;number&gt; &lt;filename&gt;
 </code></pre></div></div>
 
-<h2 id="wc-命令"><strong>wc</strong> 命令</h2>
+<h3 id="wc-命令"><strong>wc</strong> 命令</h3>
 
 <p><strong>wc</strong> 命令用于计算文件中的行、字和字符的数量。[-l] 选项用于仅显示行数。[-w] 选项用于仅显示字数。[-c] 选项用于仅显示字符数。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wc <span class="nt">&lt;filename&gt;</span>
-$ wc -l <span class="nt">&lt;filename&gt;</span>
-$ wc -w <span class="nt">&lt;filename&gt;</span>
-$ wc -c <span class="nt">&lt;filename&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wc &lt;filename&gt;
+$ wc -l &lt;filename&gt;
+$ wc -w &lt;filename&gt;
+$ wc -c &lt;filename&gt;
 </code></pre></div></div>
 
 <blockquote>
   <p>Tips: <br /> 使用 <strong>↑</strong> 箭头可以显示上一命令。使用 <strong>Esc + .</strong> 可以快速重新利用上一命令中的参数。</p>
 </blockquote>
 
-<h2 id="history-命令"><strong>history</strong> 命令</h2>
+<h3 id="history-命令"><strong>history</strong> 命令</h3>
 
 <p><strong>history</strong> 命令用于显示使用过的命令的历史记录。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ history
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ history
 </code></pre></div></div>
 
-<h2 id="ifconfig-命令"><strong>ifconfig</strong> 命令</h2>
+<h3 id="ifconfig-命令"><strong>ifconfig</strong> 命令</h3>
 
 <p><strong>ifcongfig</strong> 命令用于显示当前网络地址。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ifconfig
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ifconfig
 </code></pre></div></div>
 
 <blockquote>
@@ -137,23 +133,23 @@ $ wc -c <span class="nt">&lt;filename&gt;</span>
 
 <p>虚拟机的一些默认配置(比如说时区和语言)可能不太合适，可以通过以下方式修改。</p>
 
-<h2 id="更换时区">更换时区</h2>
+<h3 id="更换时区">更换时区</h3>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 </code></pre></div></div>
 
-<h2 id="修改默认语言">修改默认语言</h2>
+<h3 id="修改默认语言">修改默认语言</h3>
 
 <p>这里将会使用到 <strong>vi</strong> 命令。关于 <strong>vi</strong> 命令是之后的内容了，它可以理解为一个文本编辑器。<strong>vi</strong> 和 <strong>vim</strong> 命令有很多强大的用法，现在只介绍最简单的，用来修改默认语言。</p>
 
 <p>首先打开配置语言的文件。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vi /etc/locale.conf
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vi /etc/locale.conf
 </code></pre></div></div>
 
 <p>按 <strong>i</strong> 键进入插入模式。然后修改其中关于语言的UTF-8编码。</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LANG="zh_CN.UTF-8"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LANG="zh_CN.UTF-8"
 </code></pre></div></div>
 
 <p>接下来按 <strong>Esc</strong> 退出插入模式，再按 <strong>Shift + zz</strong> 保存退出。</p>

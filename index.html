@@ -52,7 +52,7 @@ layout: default
     <div class="col-md-8 offset-md-1">
       {% assign categories = site.categories | sort %}
       {% for category in categories %}
-      <h3>{{ category | first }}</h3>
+      <h2>{{ category | first }}</h2>
       <p>{% for posts in category %} {% for post in posts %}
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
         {% endfor %} {% endfor %}  </p>
