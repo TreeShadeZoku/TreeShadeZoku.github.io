@@ -1,5 +1,5 @@
-I"G<blockquote>
-  <p>Write in front: <br /> 写一些东西督促自己把 Linux 里没学会的东西复习一遍。《红帽系统管理》的内容挺丰富的，希望能坚持到写完——或者写得差不多。</p>
+I")!<blockquote>
+  <p>Write in front: <br /> 写一些东西督促自己把 Linux 里没学会的东西复习一遍。《红帽系统管理》的内容挺丰富的，希望能坚持到写完……或者写得差不多。</p>
 </blockquote>
 
 <h3 id="目录">目录</h3>
@@ -72,8 +72,8 @@ $ date +%x
 
 <p><strong>head</strong> 命令和 <strong>tail</strong> 命令用于显示文件的开头和结尾部分，默认情况下显示10行。</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ head [filename]
-$ tail [filename]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ head &lt;filename&gt;
+$ tail &lt;filename&gt;
 </code></pre></div></div>
 
 <p>[-n] 选项可以指定输出不同的行数。</p>
@@ -120,12 +120,40 @@ $ wc -c &lt;filename&gt;
 
 <p>使用方向键可以在当前输入的命令内移动， bash 提供了更为强大的编辑命令。</p>
 
-<p><strong>Ctrl + a</strong> 跳到命令行开头 <br />
-<strong>Ctrl + e</strong> 跳到命令行末尾 <br />
-<strong>Ctrl + u</strong> 将光标到命令行开头的内容清除 <br />
-<strong>Ctrl + k</strong> 将光标到命令行结尾的内容清除 <br />
-<strong>Ctrl + ←</strong> 跳到命令行中前一字的开头 <br />
-<strong>Ctrl + →</strong> 跳到命令行中下一字的开头 <br /></p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">快捷键组合</th>
+      <th style="text-align: left">功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Ctrl + a</strong></td>
+      <td style="text-align: left">跳到命令行开头</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Ctrl + e</strong></td>
+      <td style="text-align: left">跳到命令行末尾</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Ctrl + u</strong></td>
+      <td style="text-align: left">将光标到命令行开头的内容清除</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Ctrl + k</strong></td>
+      <td style="text-align: left">将光标到命令行结尾的内容清除</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Ctrl + ←</strong></td>
+      <td style="text-align: left">跳到命令行中前一字的开头</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Ctrl + →</strong></td>
+      <td style="text-align: left">跳到命令行中下一字的开头</td>
+    </tr>
+  </tbody>
+</table>
 
 <hr />
 
