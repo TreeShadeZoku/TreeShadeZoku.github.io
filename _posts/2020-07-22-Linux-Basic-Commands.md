@@ -57,7 +57,7 @@ https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.ht
 
 ### **date** 命令
 
-'date' 命令用于显示当前日期和时间。
+`date` 命令用于显示当前日期和时间。
 
 ```
 $ date
@@ -72,30 +72,30 @@ $ date +%r
 $ date +%x
 ```
 
-'cal' 命令用于显示日历。
+`cal` 命令用于显示日历。
 
 ```
 $ cal <day> <month> <year>
 ```
 
->Tips: <br> 不知道该如何使用命令的选项和参数时，可以使用 '--help' 选项查询。
+>Tips: <br> 不知道该如何使用命令的选项和参数时，可以使用 `--help` 选项查询。
 
 ### **file** 命令
 
-'file' 命令用于扫描文件内容的开头并输出文件类型。
+`file` 命令用于扫描文件内容的开头并输出文件类型。
 
 ```
 $ file <filename>
 ```
 
-'head' 命令和 'tail' 命令用于显示文件的开头和结尾部分，默认情况下显示10行。
+`head` 命令和 `tail` 命令用于显示文件的开头和结尾部分，默认情况下显示10行。
 
 ```
 $ head <filename>
 $ tail <filename>
 ```
 
-[-n] 选项可以指定输出不同的行数。
+`-n` 选项可以指定输出不同的行数。
 
 ```
 $ head -n <number> <filename>
@@ -104,7 +104,7 @@ $ tail -n <number> <filename>
 
 ### **wc** 命令
 
-'wc' 命令用于计算文件中的行、字和字符的数量。'-l' 选项用于仅显示行数。'-w' 选项用于仅显示字数。'-c' 选项用于仅显示字符数。
+`wc` 命令用于计算文件中的行、字和字符的数量。`-l` 选项用于仅显示行数。`-w` 选项用于仅显示字数。`-c` 选项用于仅显示字符数。
 
 ```
 $ wc <filename>
@@ -117,19 +117,19 @@ $ wc -c <filename>
 
 ### **history** 命令
 
-'history' 命令用于显示使用过的命令的历史记录。
+`history` 命令用于显示使用过的命令的历史记录。
 
 ```
 $ history
 ```
 
-使用数字选项可以指定 'history' 命令输出命令列表中的最后 x 条命令。
+使用数字选项可以指定 `history` 命令输出命令列表中的最后 x 条命令。
 
 ```
 $ history <number-x>
 ```
 
-还有一些与 '!' 有关的命令。
+还有一些与 `!` 有关的命令。
 
 执行历史记录列表中的第 x 条命令。
 
@@ -151,7 +151,7 @@ $ !!
 
 ### **ifconfig** 命令
 
-'ifcongfig' 命令用于显示当前网络地址。
+`ifcongfig` 命令用于显示当前网络地址。
 
 ```
 $ ifconfig
@@ -159,7 +159,7 @@ $ ifconfig
 
 ### **clear** 命令
 
-'clear' 命令用于清屏。
+`clear` 命令用于清屏。
 
 ```
 $ clear
@@ -167,7 +167,7 @@ $ clear
 
 ### **ascii** 命令
 
-'ascii' 命令用于查看 ASCII 表。
+`ascii` 命令用于查看 ASCII 表。
 
 ```
 $ ascii
@@ -175,7 +175,7 @@ $ ascii
 
 ### **whoami** 命令
 
-'whoami' 命令用于显示当前用户的用户名。
+`whoami` 命令用于显示当前用户的用户名。
 
 ```
 $ whoami
@@ -206,13 +206,19 @@ $ whoami
 
 ### 更换时区
 
+更换时区有几种方法，这里使用 `timedatectl` 命令。
+
 ```
-$ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+$ timedatectl set-timezone Asia/Shanghai
+$ timedatectl set-ntp yes
+$ timedatectl set-local-rtc 1
 ```
+
+由于这个过程中更改了硬件时间，所以再次使用 `timedatectl` 命令查看时间时会出现警告，但是问题不大。
 
 ### 修改默认语言
 
-这里将会使用到 'vi' 命令。关于 'vi' 命令是之后的内容了，它可以理解为一个文本编辑器。'vi' 和 'vim' 命令有很多强大的用法，现在只介绍最简单的，用来修改默认语言。
+这里将会使用到 `vi` 命令。关于 `vi` 命令是之后的内容了，它可以理解为一个文本编辑器。`vi` 和 `vim` 命令有很多强大的用法，现在只介绍最简单的，用来修改默认语言。
 
 首先打开配置语言的文件。
 
